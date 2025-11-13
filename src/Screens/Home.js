@@ -10,6 +10,11 @@ const Home = ({navigation}) => {
 
       <TouchableOpacity style={styles.UseState} onPress={()=>{navigation.navigate("UseState")}} >
      <Text>   useState </Text>
+   
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.UseState} onPress={()=>{navigation.navigate("UseEffectHook")}} >
+     <Text>   useEffect </Text>
+   
       </TouchableOpacity>
       
     </View>
@@ -21,8 +26,9 @@ export default Home
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    justifyContent:"center",
-    alignItems:"center"
+    justifyContent:"space-around",
+    alignItems:"center",
+    flexDirection:"row"
   },
   UseState:{height:30,
     width:150,
