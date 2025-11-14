@@ -16,6 +16,18 @@ const Home = ({navigation}) => {
      <Text>   useEffect </Text>
    
       </TouchableOpacity>
+       <TouchableOpacity style={styles.UseState} onPress={()=>{navigation.navigate("LayoutScreen")}} >
+     <Text>   LayoutScreen </Text>
+   
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.UseState} onPress={()=>{navigation.navigate("Day3Screen")}} >
+     <Text>   Day3Screen </Text>
+   
+      </TouchableOpacity>
+       <TouchableOpacity style={styles.UseState} onPress={()=>{navigation.navigate("Day4Screen")}} >
+     <Text>   Day4Screen </Text>
+   
+      </TouchableOpacity>
       
     </View>
   )
@@ -28,7 +40,7 @@ const styles = StyleSheet.create({
     flex:1,
     justifyContent:"space-around",
     alignItems:"center",
-    flexDirection:"row"
+  
   },
   UseState:{height:30,
     width:150,

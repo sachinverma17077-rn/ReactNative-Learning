@@ -10,7 +10,7 @@ const UseEffectHook = () => {
 
   return (
     <View>
-        <Button title='increase' onPress={()=>setCount(count+1)} style={{width:50}} />
+        <Button title='increase' onPress={()=>setCount(count+1)}/>
       <Text>count:{count}</Text>
     </View>
   )
